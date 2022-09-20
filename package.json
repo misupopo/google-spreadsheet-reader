@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tsc": "tsc",
+    "start": "npx ts-node src/index.ts",
     "build": "webpack"
   },
   "author": "",

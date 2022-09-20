@@ -3,6 +3,10 @@ import { GoogleSpreadsheet, GoogleSpreadsheetWorksheet } from 'google-spreadshee
 
 // dotenv.config();
 
+(() => {
+  console.log('fdsfgdsgsdf');
+})()
+
 /**
  * GoogleSpreadsheet を操作する Service
  *
@@ -157,7 +161,13 @@ export class GoogleSpreadsheetService {
   }
 }
 
-const spreadService = await GoogleSpreadsheetService.getInstance();
+console.log('start eerew');
+
+(async () => {
+  const spreadService = await GoogleSpreadsheetService.getInstance();
+
+  console.log(1111312);
 
 // スプレットシートのタイトルを取得
-console.log(spreadService.getTitle());
+  console.log(spreadService.getTitle());
+})()
